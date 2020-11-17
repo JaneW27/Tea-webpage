@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tea Love</title>
+    <style>
+      div {
+        background: linear-gradient(#be6283, #f0c9c9);
+        border-radius: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 60px 60px;
+        padding: 10px 40px;
+      }
+
+      h1,
+      h2 {
+        text-align: center;
+        color: #206a5d;
+      }
+      h2 {
+        font-size: 22px;
+      }
+      hr {
+        display: block;
+        height: 1px;
+        width: 85%;
+        margin: 0 auto;
+        border-radius: 4px;
+        background-color: #042f5a;
+        border: none;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 80%;
+        border-radius: 10px;
+      }
+      p {
+        margin: 30px 30px;
+        line-height: 1.5;
+        font-size: 16px;
+      }
+      span.taste {
+        color: #006a71;
+      }
+
+      button {
+        display: block;
+        background-color: #206a5d;
+        font-weight: bold;
+        border-radius: 20px;
+        border: #006a71;
+        color: aliceblue;
+        padding: 20px;
+        margin: 0 auto 20px auto;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 150ms ease-in-out;
+      }
+
+      button:hover {
+        cursor: pointer;
+        opacity: 0.9;
+      }
+      footer {
+        font-size: small;
+        font-weight: lighter;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>I love Tea</h1>
+      <h2>"There's always time for tea!"</h2>
+      <hr />
+      <br />
+
+      <img
+        src="https://cdn.shopify.com/s/files/1/1613/2065/files/banmner2_1600x.jpg?v=1579812409"
+        alt="tea display"
+      />
+      <br />
+      <hr />
+      <p>
+        <strong> Tea </strong> an aromatic beverage commonly prepared by pouring
+        hot or boiling water over cured or fresh leaves of the Camellia
+        sinensis, an evergreen shrub native to East Asia. After water, it is the
+        most widely consumed drink in the world.
+        <br />
+        <br />
+        There are many different types of <em>tea</em> some, like Darjeeling and
+        Chinese greens, have a cooling, slightly bitter, and astringent flavour,
+        while others have vastly different profiles that include
+        <span class="taste">sweet</span>, <span class="taste">nutty</span>,
+        <span class="taste">floral</span>, or
+        <span class="taste">grassy</span> notes.
+        <br />
+        <br />
+        Learn more about tea from
+        <a href="https://en.wikipedia.org/wiki/Tea" target="blank">Wikipedia</a>
+      </p>
+      <br />
+      <button>Let's talk tea!</button>
+      <br />
+      <footer>Coded by Jane Wong</footer>
+      <br />
+    </div>
+    <script>
+      function clickButton() {
+        let name = prompt("Great! What is your name?");
+        let like = prompt("Do you love tea?");
+
+        if (like === "no") {
+          alert("Let's see if we can change your mind 😁");
+        } else {
+          alert("That's Tea-rrific " + name + "! We'll be in touch soon!");
+        }
+      }
+
+      let teaButton = document.querySelector("button");
+
+      teaButton.addEventListener("click", clickButton);
+    </script>
+  </body>
+</html>
